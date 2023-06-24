@@ -1,456 +1,127 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-icon {
-  display: center;
-  text-align: center;
-}
-
-.home-icon::before {
-  content: "\f015"; 
-}
-
-.gamepad-icon::before {
-  content: "\f11b"; 
-}
-
-.user-icon::before {
-  content: "\f007"; 
-}
-user-icon::before {
-  content: "\f03a"; 
-}
-
-
-.navbar {
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #4dc4e6;
-  display: flex;
-  position: fixed;
-  justify-content: center;
-  align-items: center; 
-  height: 10vh; 
-  z-index: 9999;
-
-}
-
-.nav--list {
-  position: fixed; 
-  width: auto;
-  margin: 0; 
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
-}
-
-.active {
-  z-index: 9999;
-  background-color: gold;
-  color: green;
-  transition: left 300ms ease, width 200ms 200ms ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  padding: 3%; 
-  height: 5vh;
-  border-radius: 20%;
-  font-size: 1.2rem;
-}
-
-.item {
-  position: static;
-  margin: 5px; 
-  display: flex;
-  max-height: 10vh;
-  align-items: center;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: aliceblue;
-  z-index: 9999;
-
-}
-
-
-body {
-  margin: auto;
-  text-align: center;
-  background-image: url('bg.png');
-  background-color: white;
-  background-repeat: repeat;
-  background-size: cover;
-}
-
-h1 {
-  color: #1a5165;
-}
-
-h2 {
-  color: #5288ac;
-}
-
-
-
-
-
-
-.animal-portrait {
-  height: auto;
-}
-
-#villagers-container {
-  margin: 100%;
-  color: #1a5165;
-}
-
-.animal-type-portrait-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.portrait-container {
-  width: auto;
-  margin: 0.5vh;
-  color: #2e556e;
-  font-weight: 500;
-  filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-}
-#download-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4dc4e6;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 1.2rem;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#download-btn:hover {
-  background-color: #3ba5c8;
-  transform: scale(1.1);
-
-}
-
-#download-btn:focus {
-  outline: none;
-}
-
-#download-btn:active {
-  transform: translateY(2px);
-}
-
-
-.bingo-text {
-  float: right;
-  background-color: white;
-  max-width: 330px;
-  padding: 10px;
-  max-height: 600px;
-}
-
-#logo img {
-  height: 10vh;
-  margin: 2vh 0 0 2vw;
-}
-
-.grow {
-  font-style: italic;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.grow:hover {
-  transform: scale(1.1);
-}
-
-a#download {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: black;
-}
-
-.footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: transparent;
-  font-family: 'Quicksand', sans-serif;
-  max-width: 100%;
-font-size: 2vh;
-margin-bottom: auto;
-  text-align: center;
-}
-
-
-
-.social-media-container {
-  position: relative;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-  text-align: center;
-
-}
-
-.social-media-test {
-  background-color: aliceblue;
-  border-radius: 5%;
-  padding: 10px;
-  width: 50%;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  text-align: center;
-}
-
-
-.social-media-item {
-  margin-bottom: 5px;
-}
-
-.social-media-link {
-  color: black;
-}
-
-
-
-
-
-.text-block {
-  text-align: center;
-  background-color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 5%;
-  border: 1px solid yellowgreen;
-  font-size: 1.2rem;
-  padding: 2%;
-  max-width: 50%;
-  max-height: auto;
-  overflow: auto;
-  margin: 10% auto 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
-
-.text-paragraph {
-  padding: 1px;
-  text-align: right;
-  background-color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
-  border: 1px solid yellowgreen;
-  max-width: 300px;
-  max-height: 300px;
-  position: relative;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/26d56247c4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Animal Crossing Bingo - Credits</title>
+  <style> 
+    .credits-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .top-left-image {
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+    
+    .social-media-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    
+    .social-media-test {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <ul class="nav--list">
+        <li class="item">
+          <a href="index.html" title="Home">
+            <i class="fa-solid fa-house"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="rules.html" title="Rules">
+            <i class="fa-solid fa-book"></i>
+            Rules
+          </a>
+        </li>
+        <li>
+          <a href="Bingo.html" title="Bingo">
+            <i class="fa-solid fa-gamepad"></i>
+            Bingo
+          </a>
+        </li>
+        <li class="item active"> 
+          <a href="credits.html" title="Credits">
+            <i class="fa-solid fa-list"></i>
+            Credits
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
+  <div class="credits-container">
+  
+    <div class="content-container">
+      <h1 class="credits-heading">Credits</h1>
+      <ul class="credits-list">
+        <li class="credits-list-item">
+          <span class="credits-name">Developer:</span> Sousa
+        </li>
+        <li class="credits-list-item">
+          <span class="credits-name">Artwork by:</span> Freepik
+          <a href="https://www.freepik.com/free-vector/empty-sky-nature-scene-park_11146885.htm#page=2&query=cartoon%20sky%20and%20grass&position=8&from_view=search&track=ais">Image by brgfx</a> on Freepik
+        </li>
+        <li class="credits-list-item">
+          <span class="credits-name">Designer:</span> Sousa
+        </li>
+        <li>
+          <span class="credits-name">Bingo Board Generator Credits:</span><br>
+          Thanks to Tori Murray for developing the original Bingo Board Generator.<br>
+          Go check out her GitHub <a href="https://github.com/t0ri">here</a>.
+        </li>
+      </ul>
+    </div>
 
-.link-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50%;
-  padding: 5px;
-  text-align: center;
-}
+    <div class="social-media-container">
+      <div class="social-media-test">
+        Follow Strawbfrend on social media!
+        <div class="social-media-item">
+          <a href="https://www.twitch.tv/strawbfrend" class="social-media-link" target="_blank">
+            <i class="fab fa-twitch" style="color: #9147ff;"></i> Twitch
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://www.instagram.com/strawbfrend" class="social-media-link" target="_blank">
+            <i class="fab fa-instagram" style="color: #e4405f;"></i> Instagram
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://twitter.com/strawbfrend" class="social-media-link" target="_blank">
+            <i class="fab fa-twitter" style="color: #1da1f2;"></i> Twitter
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://www.youtube.com/@strawbfrend" class="social-media-link" target="_blank">
+            <i class="fab fa-youtube" style="color: #ff0000;"></i> YouTube
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a href="https://www.tiktok.com/@_strawbfrend" class="social-media-link" target="_blank">
+            <i class="fab fa-tiktok" style="color: #000000;"></i> TikTok
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-.disabled-link {
-  pointer-events: none;
-  opacity: 0.5;
-  cursor: not-allowed;
-}
+  <footer class="footer">
+    &copy; 2023 Animal Crossing and any associated imagery are a registered trademark of Nintendo inc and Villager Bingo Hunt is in no way associated with Nintendo inc or any of its associated properties.
+  </footer>
+</body>
+</html>
 
-
-
-
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-}
-
-
-.credits-container {
-  margin: 10% auto;
-  padding: 0;
-  width: 50%;
-  background-color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.2rem;
-  border: 1px solid yellowgreen;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center;
-}
-
-
-
-
-
-.content-container {
-  flex: 1; 
-}
-
-
-.credits-heading {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.credits-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.credits-list-item {
-  margin-bottom: 10px;
-}
-
-.credits-name {
-  font-weight: bold;
-}
-
-.credits-role {
-  font-style: italic;
-}
-.rules img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.rules {
-  width: 50%;
-  max-width: 50%;
-  margin: 10% auto 5%;
-  padding: 5%;
-  background-color: aliceblue;
-  border: 1px solid yellowgreen;
-  text-align: center;
-  font-size: auto;
-}
-
-
-
-  .canvas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  margin-top: auto;
-  max-height: 100%;
-  max-width: 100%;
-  padding-bottom: 5%;
-  margin-top: auto;
-  justify-content: center; 
-  object-fit: contain;
-  margin-top: 50px;
-
-
-
-  }
-
-  #randomize {
-    background-color: purple;
-    color: white;
-    border-radius: 6vh;
-    max-height: auto;
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 3%;
-    transition: background-color 0.3s ease;
-    margin-bottom: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-  }
-.wrapper {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  margin: 5%;
-  margin-top: 50px;
-
-}
-.villager-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  background-repeat: no-repeat;
-  grid-gap: 5px;
-}
-
-.villager-item {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-
-.villager-item img {
-  max-width: 50%;
-  height: 50%;
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-.villager-name{
-font-family: Quicksand;
-font-weight: bold;
-display: block;
-text-align: center;
-}
-
-
-.villager-grid-bg {
-  object-fit: contain;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  background-image: url('background.png');
-  background-repeat: repeat;
-  grid-gap: 5px;
-
-
-}
