@@ -1,0 +1,70 @@
+const fetch = require('node-fetch'); // Import the 'node-fetch' module
+const fs = require('fs'); // Import the Node.js file system module
+
+function fetchVillagers() {
+    return fetch('http://acnhapi.com/v1/villagers')
+      .then((response) => {
+        console.log('Response status:', response.status);
+        return response.json();
+      })
+      .then((data) => {
+        console.log('API response:', data);
+        return data.villagers.map((villager) => {
+          return {
+            name: villager.name,
+            image: villager.image_uri,
+          };
+        });
+      });
+  }
+  
+
+function generateVillagersHTML(villagersData) {
+  let html = '';
+  villagersData.forEach((villager) => {
+    html += `
+      <div class="villager-grid-item">
+        <div class="villager-container">
+          <img class="villager-image" src="${villager.image}" alt="${villager.name}">
+          <span class="villager-name">${villager.name}</span>
+        </div>
+      </div>
+    `;
+  });
+  return html;
+}
+
+function updateHTMLWithVillagersData() {
+  fetchVillagers()
+    .then((villagersData) => {
+      const villagersHTML = generateVillagersHTML(villagersData);
+
+      // Read the existing HTML file
+      fs.readFile('villagers.html', 'utf8', (err, data) => {
+        if (err) {
+          console.log('Error reading HTML file:', err);
+          return;
+        }
+
+        // Replace the static HTML content with the generated villagers HTML
+        const updatedHTML = data.replace(/<div class="villager-grid">[\s\S]*<\/div>/, villagersHTML);
+
+        // Write the updated HTML back to the file
+        fs.writeFile('villagers.html', updatedHTML, 'utf8', (err) => {
+          if (err) {
+            console.log('Error updating HTML file:', err);
+            return;
+          }
+
+          console.log('HTML file updated successfully.');
+        });
+      });
+    })
+    .catch((error) => {
+      console.log('Error fetching villagers data:', error);
+    });
+
+
+// Call the function to update the HTML file with villagers data
+updateHTMLWithVillagersData();
+    }

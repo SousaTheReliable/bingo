@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ACNH Villager Hunting Bingo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/26d56247c4.js" crossorigin="anonymous"></script>
+    <style>    
+  
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="nav--list">
+          <li>
+            <a href="index.html" title="Home">
+              <i class="fa-solid fa-house"></i>
+              Home
+            </a>
+          </li>
+          <li class="item active">
+            <a href="rules.html" title="Rules">
+              <i class="fa-solid fa-gamepad"></i>
+              Rules
+            </a>
+          </li>
+          <li class="item">
+            <a href="bingo.html" title="Bingo">
+              <i class="fa-solid fa-gamepad"></i>
+              Bingo
+            </a>
+          </li>
+          <li class="item">
+            <a href="credits.html" title="Credits">
+              <i class="fa-solid fa-list"></i>
+              Credits
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <script>
+      function toggleLinkButton() {
+        var checkbox = document.getElementById("checkbox");
+        var linkButton = document.getElementById("linkButton");
+    
+        if (checkbox.checked) {
+          linkButton.classList.remove("disabled-link");
+        } else {
+          linkButton.classList.add("disabled-link");
+        }
+      }
+    </script>
+   
+    <div class="rules">
+      <h1 style="text-align: center;">Rules and How to Play</h1>
+      <ol>
+        <li><a href="https://discord.gg/TsyKfRzGPQ" target="_blank">Join the Discord</a> if you haven't yet.</li>
+        <br>
+        <li>One (1) bingo board per person. If there is a duplicate villager or a villager that is on Strawb's island on your board, generate a new one.</li>
+        <br>
+        <li>Post your board in the 🍃animal-crossing-hub channel.</li>
+        <br>
+        <li>Have fun and fill out your card as we hunt! If you joined late or missed an island, feel free to add the villagers from previous hunts.</li>
+        <br>
+        <li>Post your bingo board in the animal-crossing-hub channel in the Discord.</li>
+        <br>
+        <li>If you think you have a BINGO, send your completed card in the 🍃animal-crossing-hub channel and say, "BINGO" in the Twitch chat!</li>
+        <p>Winners get a VIP role on Twitch. Double bingo winners will get a "Bingo Extraordinaire" role on Discord.</p>
+        <li>
+          <br>
+          <p>Follow along on the spreadsheet <a href="https://docs.google.com/spreadsheets/d/1b_4DPONMoM7koc2vzGmfiKwKUiF8VJMvHt3tb_gzqno/edit?usp=sharing" title="Take me to the spreadsheet!"><br>Take me to the spreadsheet!</a></p>
+        </li>
+      </ol>
+      
+      <div class="checkbox-container">
+        <p class="checkbox-text">
+          <br>
+          <input type="checkbox" id="checkbox" class="checkbox-input" onchange="toggleLinkButton()">
+          <label for="checkbox" class="checkbox-label">I have read the rules.</label>
+        </p>
+        <br>
+        <a href="bingo.html" id="linkButton" class="link-button disabled-link" target="_blank">Take me to the Bingo Board.</a>
+        <div class="social-media-container">
+
+      </div>
+    </div>
+
+      Follow Strawbfrend on social media!
+      <div class="social-media-item">
+        <a href="https://www.twitch.tv/strawbfrend" class="social-media-link" target="_blank">
+          <i class="fab fa-twitch" style="color: #9147ff;"></i> Twitch
+        </a>
+      </div>
+      <div class="social-media-item">
+        <a href="https://www.instagram.com/strawbfrend" class="social-media-link" target="_blank">
+          <i class="fab fa-instagram" style="color: #e4405f;"></i> Instagram
+        </a>
+      </div>
+      <div class="social-media-item">
+        <a href="https://twitter.com/strawbfrend" class="social-media-link" target="_blank">
+          <i class="fab fa-twitter" style="color: #1da1f2;"></i> Twitter
+        </a>
+      </div>
+      <div class="social-media-item">
+        <a href="https://www.youtube.com/@strawbfrend" class="social-media-link" target="_blank">
+          <i class="fab fa-youtube" style="color: #ff0000;"></i> YouTube
+        </a>
+      </div>
+      <div class="social-media-item">
+        <a href="https://www.tiktok.com/@_strawbfrend" class="social-media-link" target="_blank">
+          <i class="fab fa-tiktok" style="color: #000000;"></i> TikTok
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2023 Animal Crossing and any associated imagery are a registered trademark of Nintendo inc and Villager Bingo Hunt is in no way associated with Nintendo inc or any of its associated properties.
+    </footer>
+
+    <script src="js/SlotData.js"></script>
+    <script src="js/UI.js"></script>
+    <script src="js/Villagers.js"></script>
+    <script src="js/Card.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
+</html>
