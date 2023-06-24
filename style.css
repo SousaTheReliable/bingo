@@ -373,17 +373,13 @@ a#download {
 
 
 
-  canvas {
-    align-items: center;
-     height: auto;
-     width: auto;
-  margin-top: auto;
-  justify-content: center; 
-  object-fit: contain;
+canvas {
+  max-width: 100%;
+  max-height: auto;
+  width: auto;
+  height: auto;
+}
 
-
-
-  }
 
   #randomize {
     background-color: purple;
@@ -464,14 +460,15 @@ a#download {
 }
 
 .scroll-down-container p {
-  background-color: #87CEEB; /* Sky Blue */
-border: 2px solid #000000; /* Black */
-  color: black;
-  border-radius: 6vh;
-  max-height: auto;
+  background-color: green; 
+border: 2px solid #000000; 
+  color: white;
+  border-radius: 2vh;
+  max-height: vh;
+  max-width: auto;
   text-decoration: none;
   font-weight: bold;
-  padding: 5%;
+  padding: 3.5%;
   margin-top: 5px;
   margin-bottom: 5px;
   display: flex;
