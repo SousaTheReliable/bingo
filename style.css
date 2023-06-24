@@ -205,6 +205,8 @@ margin-bottom: auto;
   right: 0;
   margin: 10px;
   text-align: center;
+  left: 0%;
+  right: 50%;
 
 }
 
@@ -213,6 +215,8 @@ margin-bottom: auto;
   border-radius: 5%;
   padding: 10px;
   width: 50%;
+  left: 50%;
+  right: 50%;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -307,6 +311,7 @@ margin-bottom: auto;
   margin: 10% auto;
   padding: 0;
   width: 25%;
+  
   background-color: aliceblue;
   font-family: 'Quicksand', sans-serif;
   font-size: 1.2rem;
