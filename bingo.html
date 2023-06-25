@@ -8,9 +8,7 @@
   <link rel="shortcut icon" href="./favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/26d56247c4.js" crossorigin="anonymous"></script>
-  <style>
-  
-  </style>
+ 
 </head>
 <body>
 <script>function scrollToSection(sectionId) {
@@ -35,7 +33,6 @@
         Rules
       </a>
     </li>
-    </li>
     <li class="item">
       <li class="item active"> 
       <a href="bingo.html" title="Bingo">
@@ -53,24 +50,25 @@
   </nav>
 </div>
 
-
+<div class="scroll-down-container" id="scroll-down-section" onclick="scrollToSection('villager-section')">
+  <p>Tap or scroll down to see Strawb's current villagers.</p>
+</div>
 <div class="wrapper">
+
+  
+  <canvas></canvas>
   <p id="randomize" class="grow" onclick="card.randomizeCard(this)">
     <span aria-labelledby="arrow-right">➡️</span>
     Click here to randomize your bingo card.
     <span aria-labelledby="arrow-left"> ⬅️</span>
   </p>
-  <div class="scroll-down-container" id="scroll-down-section" onclick="scrollToSection('villager-section')">
-    <p>Tap or scroll down to see Strawb's current villagers.</p>
-  </div>
-  
-  
-  <canvas></canvas>
 
+  
   <a id="download-btn" download="bingo-card.jpg" href="" onclick="card.downloadImage(this)">Download Bingo Card</a>   
 </div>
 
 <div class="villager-grid-text">
+  <h1 style="text-align: center;">Strawb's Current Villagers</h1>
   <div class="villager-grid-wrapper" id="villager-section">
     <div class="villager-item">
       <img src="Blanche.png" alt="Blanche">
@@ -116,43 +114,43 @@
       <img src="Poppy.png" alt="Poppy">
       <span class="villager-name">Poppy</span>
     </div>
-
     <div class="villager-item">
       <img src="Teddy.png" alt="Teddy">
       <span class="villager-name">Teddy</span>
     </div>
   </div>
+  
 </div>
 
-<div class="social-media-container">
-  Follow Strawb Frend on Social Media!
-  <div class="social-media-item">
-      <a href="https://www.twitch.tv/strawbfrend" class="social-media-link" target="_blank">
-          <i class="fab fa-twitch" style="color: #9147ff;"></i> Twitch
-      </a>
-  </div>
-  <div class="social-media-item">
-      <a href="https://www.instagram.com/strawbfrend" class="social-media-link" target="_blank">
-          <i class="fab fa-instagram" style="color: #e4405f;"></i> Instagram
-      </a>
-  </div>
-  <div class="social-media-item">
-      <a href="https://twitter.com/strawbfrend" class="social-media-link" target="_blank">
-          <i class="fab fa-twitter" style="color: #1da1f2;"></i> Twitter
-      </a>
-  </div>
-  <div class="social-media-item">
-      <a href="https://www.youtube.com/@strawbfrend" class="social-media-link" target="_blank">
-          <i class="fab fa-youtube" style="color: #ff0000;"></i> YouTube
-      </a>
-  </div>
-  <div class="social-media-item">
-      <a href="https://www.tiktok.com/@_strawbfrend" class="social-media-link" target="_blank">
-          <i class="fab fa-tiktok" style="color: #000000;"></i> TikTok
-      </a>
-  </div>
-</div>
-
+  <div class="social-media-container">
+        Follow Strawb Frend on Social Media!
+        <div class="social-media-item">
+            <a href="https://www.twitch.tv/strawbfrend" class="social-media-link" target="_blank">
+                <i class="fab fa-twitch" style="color: #9147ff;"></i> Twitch
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="https://www.instagram.com/strawbfrend" class="social-media-link" target="_blank">
+                <i class="fab fa-instagram" style="color: #e4405f;"></i> Instagram
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="https://twitter.com/strawbfrend" class="social-media-link" target="_blank">
+                <i class="fab fa-twitter" style="color: #1da1f2;"></i> Twitter
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="https://www.youtube.com/@strawbfrend" class="social-media-link" target="_blank">
+                <i class="fab fa-youtube" style="color: #ff0000;"></i> YouTube
+            </a>
+        </div>
+        <div class="social-media-item">
+            <a href="https://www.tiktok.com/@_strawbfrend" class="social-media-link" target="_blank">
+                <i class="fab fa-tiktok" style="color: #000000;"></i> TikTok
+            </a>
+        </div>
+    </div>
+    
 
 <footer class="footer">
   &copy; 2023 Animal Crossing and any associated imagery are a registered trademark of Nintendo inc and Villager Bingo Hunt is in no way associated with Nintendo inc or any of its associated properties.
