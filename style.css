@@ -148,13 +148,12 @@ h2 {
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 10px;
-  margin-bottom: -5%;
 }
 
 #download-btn:hover {
@@ -381,6 +380,7 @@ a#download {
 canvas {
   max-width: 100%;
   max-height: auto;
+  width: auto;
 }
 
 #randomize {
@@ -407,6 +407,7 @@ canvas {
   align-items: center;
   justify-content: center;
   width: auto;
+  justify-content: center;
   max-width: 300px;
   height: 50%;
   padding: 2%;
@@ -417,7 +418,7 @@ canvas {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 65px;
 }
 .scroll-down-container:hover {
   transform: scale(1.1);
@@ -555,29 +556,4 @@ canvas {
     grid-template-rows: repeat(12, 1fr);
     margin-bottom: 20px;
   }
-}
-.spreadsheet {
-display: inline-block;
-background-color: skyblue;
-font-family: Quicksand;
-font-weight: bold;
-border: none;
-border-radius: 10px;
-font-size: 20px;
-text-align: center;
-text-decoration: none;
-cursor: pointer;
-transition: background-color 0.3s ease;
-margin: 10px;
-width: 25%;
-padding: 2%;
-}
-
-.spreadsheet:hover {
-  transform: scale(1.1);
-
-
-
-
-
 }
