@@ -29,7 +29,7 @@ class Card {
       // Reset `this.villagers.villagers` if undefined
       this.villagers.villagers = new Array()
       // Call `init()` again to restart process
-      setTimeout(this.init(), 1000)
+      setTimeout(this.init(), 5000)
     }
   }
 
@@ -45,8 +45,8 @@ class Card {
       this.activeGridPosition = this.slotData.slotToGrid[slot]
 
       if (slot !== 13) {  
-        // Get random integer between 0 and 413
-        const randomVillagerNumber = Math.floor(Math.random() * Math.floor(390))
+        // Get random integer between 0 and 391
+        const randomVillagerNumber = Math.floor(Math.random() * Math.floor(414))
         
         // Get Villager from `randomVillagerNumber`
         const villager = this.villagers.villagers[randomVillagerNumber]
