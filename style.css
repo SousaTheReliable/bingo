@@ -52,7 +52,7 @@
   list-style: none;
   font-size: auto;
   padding: 1%;
-  font-size: 2.5vh;
+  font-size: 20px;
 
 }
 
@@ -64,10 +64,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 5wh;
+  width: auto;
   padding: 1%;
-  height: 6vh;
   border-radius: 20%;
+  height: 50px;
 }
 
 .active {
@@ -78,26 +78,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 5wh;
+  width: 100px;
   padding: 1%;
-  height: auto;
   border-radius: 20%;
+  height: 50px;
 }
 
 .item {
-  font-size: 2.5vh;
+  font-size: 20px;
   position: static;
-  margin: 10px;
+  margin: auto;
   display: flex;
-  max-height: 10vh;
-  width: 5wh;
+  width: 100px;
   align-items: center;
+  padding: 1%;
+  border-radius: 20%;
 }
 
 .navbar a {
   text-decoration: none;
   color: aliceblue;
   z-index: 9999;
+  width: 100px;
+  padding: 1%;
 }
 
 body {
@@ -381,20 +384,24 @@ canvas {
   max-width: 100%;
   max-height: auto;
   width: auto;
+  margin-top: 100px;
 }
 
-#randomize {
+#instructions {
   background-color: purple;
   color: white;
   border-radius: 6vh;
   max-height: 51px;
   text-decoration: none;
   font-weight: bold;
+  font-family: Quicksand;
+  font-size: 20px;
   cursor: pointer;
-  padding: 2%;
+  max-width: 100%;
+  padding: 1%;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
-  margin-bottom: 1px;
+  margin-top: 1px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +413,7 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 50%;
   justify-content: center;
   max-width: 300px;
   height: 50%;
@@ -418,7 +425,7 @@ canvas {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   margin: 0 auto;
-  margin-top: 65px;
+  margin-top: 80px;
 }
 .scroll-down-container:hover {
   transform: scale(1.1);
