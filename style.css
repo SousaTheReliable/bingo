@@ -20,15 +20,10 @@
   content: "\f007";
 }
 
-.user-icon::before {
-  content: "\f03a";
-}
-
 .navbar {
   top: 0;
   left: 0;
   right: 0;
-  padding: auto;
   background: #4dc4e6;
   display: flex;
   position: fixed;
@@ -39,8 +34,6 @@
   z-index: 9999;
   font-size: 2.5vh;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
-
-
 }
 
 .nav--list {
@@ -50,13 +43,14 @@
   align-items: center;
   justify-content: center;
   list-style: none;
-  font-size: auto;
   padding: 1%;
   font-size: 20px;
+  margin: 10px;
 
 }
 
-.item:hover {
+.item:hover,
+.active {
   z-index: 9999;
   background-color: green;
   transition: left 300ms ease, width 200ms 200ms ease;
@@ -68,20 +62,8 @@
   padding: 1%;
   border-radius: 20%;
   height: 50px;
-}
+  margin: 10px;
 
-.active {
-  z-index: 9999;
-  background-color: gold;
-  transition: left 300ms ease, width 200ms 200ms ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  padding: 1%;
-  border-radius: 20%;
-  height: 50px;
 }
 
 .item {
@@ -98,7 +80,6 @@
 .navbar a {
   text-decoration: none;
   color: aliceblue;
-  z-index: 9999;
   width: 100px;
   padding: 1%;
 }
@@ -201,7 +182,7 @@ a#download {
 }
 
 .footer {
-  position: relative;
+  position: static;
   left: 0;
   right: 0;
   bottom: 0;
@@ -231,7 +212,7 @@ a#download {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 @media (max-width: 100px) {
   .social-media-container {
@@ -239,11 +220,12 @@ a#download {
   }
 }
 .social-media-item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .social-media-link {
-  color: black;
+  color: blue;
+
 }
 
 .text-block {
@@ -510,13 +492,14 @@ canvas {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 
 }
 
 @media (max-width: 768px) {
   .villager-grid-item {
     margin-bottom: 5px;
-  }
+   }
 }
 
 .bingo-grid {
@@ -581,6 +564,7 @@ canvas {
 .error-page-text {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .error-page-text a {
@@ -590,9 +574,9 @@ canvas {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  margin: 20px;
+  margin-bottom: 40px; 
 }
-
 .error-page-text a:hover {
   background-color: #e0e0e0;
-
 }
