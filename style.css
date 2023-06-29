@@ -3,22 +3,7 @@
   margin: 0;
 }
 
-.nav-icon {
-  display: center;
-  text-align: center;
-}
 
-.home-icon::before {
-  content: "\f015";
-}
-
-.gamepad-icon::before {
-  content: "\f11b";
-}
-
-.user-icon::before {
-  content: "\f007";
-}
 
 .navbar {
   top: 0;
@@ -32,12 +17,11 @@
   height: 60px;
   width: 100%;
   z-index: 9999;
-  font-size: 2.5vh;
+  font-size: 20px;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav--list {
-  position: fixed;
   width: 5px;
   display: flex;
   align-items: center;
@@ -54,7 +38,7 @@
   z-index: 9999;
   background-color: green;
   transition: left 300ms ease, width 200ms 200ms ease;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -69,12 +53,11 @@
 .item {
   font-size: 20px;
   position: static;
-  margin: auto;
+  margin: 10px;
   display: flex;
-  width: 100px;
   align-items: center;
   padding: 1%;
-  border-radius: 20%;
+  border-radius: 10%;
 }
 
 .navbar a {
@@ -127,12 +110,12 @@ h2 {
 
 #download-btn {
   display: inline-block;
-  padding: 10px 100px;
+  padding: 10px 50px;
   background-color: green;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 20px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -177,7 +160,7 @@ h2 {
 }
 
 a#download {
-  font-size: 1.2rem;
+  font-size: 20px;
   text-decoration: none;
   color: black;
 }
@@ -190,7 +173,7 @@ a#download {
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
   max-width: auto;
-  font-size: 1.5vh;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -242,7 +225,7 @@ a#download {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .credits {
@@ -308,7 +291,7 @@ a#download {
   width: 50%;
   background-color: aliceblue;
   font-family: 'Quicksand', sans-serif;
-  font-size: 1.2rem;
+  font-size: 20px;
   border: 1px solid yellowgreen;
   display: flex;
   flex-direction: column;
@@ -323,7 +306,7 @@ a#download {
 
 .credits-heading {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -360,7 +343,7 @@ a#download {
   background-color: aliceblue;
   border: 3px solid yellowgreen;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 canvas {
@@ -466,7 +449,7 @@ canvas {
   position: relative;
   top: 50%;
   left: 15%;
-  font-size: 16px;
+  font-size: 20px;
   width: 65%;
   max-height: auto;
   text-align: center;
@@ -552,7 +535,7 @@ canvas {
 .page-not-found {
   text-align: center;
   height: auto;
-  width: 30%;
+  width: 50%;
   font-family: 'Quicksand', sans-serif;
   border-radius: 3%;
   padding: 20px;
@@ -561,7 +544,7 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 .error-page-text {
   text-align: center;
@@ -608,3 +591,4 @@ background-color: orange;
 .spreadsheet-button:hover {
   transform: scale(1.1);
 }
+
