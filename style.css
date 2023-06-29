@@ -564,3 +564,35 @@ canvas {
     margin-bottom: 20px;
   }
 }
+.page-not-found {
+  text-align: center;
+  height: auto;
+  width: 30%;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 3%;
+  padding: 20px;
+  margin: 120px auto 5%;
+  background-color: aliceblue;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.error-page-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error-page-text a {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.error-page-text a:hover {
+  background-color: #e0e0e0;
+
+}
