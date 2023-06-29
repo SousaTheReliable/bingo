@@ -127,7 +127,7 @@ h2 {
 
 #download-btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 100px;
   background-color: green;
   color: white;
   border: none;
@@ -138,6 +138,7 @@ h2 {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 10px;
+  margin-bottom: -10px;
 }
 
 #download-btn:hover {
@@ -370,10 +371,11 @@ canvas {
 }
 
 #instructions {
+  padding: 10px 100px;
   background-color: purple;
   color: white;
   border-radius: 6vh;
-  max-height: 51px;
+  height: 50px;
   text-decoration: none;
   font-weight: bold;
   font-family: Quicksand;
@@ -579,4 +581,30 @@ canvas {
 }
 .error-page-text a:hover {
   background-color: #e0e0e0;
+}
+.spreadsheet-button {
+background-color: orange;
+  color: white;
+  border-radius: 6vh;
+  max-height: 51px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Quicksand;
+  font-size: 20px;
+  cursor: pointer;
+  width: 50%;
+  max-width: 200px;
+  margin: 5px auto 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  
+}
+
+.spreadsheet-button:hover {
+  transform: scale(1.1);
 }
