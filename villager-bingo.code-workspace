@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Bingo/ddd-bingo"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Villager Bingo"
+	}
+}
