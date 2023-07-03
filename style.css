@@ -4,7 +4,6 @@
 }
 @media (max-width: 700px) {
   .navbar .item {
-    font-size: 20px;
     position: static;
     margin: 20px;
     display: flex;
@@ -134,8 +133,8 @@ h2 {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 10px;
-  margin-bottom: -10px;
+  margin: 5px;
+  margin-bottom: 20px;
 }
 
 #download-btn:hover {
@@ -195,7 +194,6 @@ a#download {
 .social-media-container {
   position: relative;
   right: 0;
-  text-align: center;
   left: 0%;
   right: 0%;
   max-width: 75%;
@@ -245,7 +243,7 @@ a#download {
 .credits {
   height: auto;
   width: 400px;
-  padding: 5%;
+  padding: 20px;
   max-width: 75%;
   margin: 120px auto;
   background-color: aliceblue;
@@ -428,10 +426,11 @@ canvas {
   object-fit: contain;
    max-width: auto;
    width: auto;
-   margin-top: 20px;
    gap: 10px;
    margin: 5px auto auto;
-}
+   border: 5px solid black;
+  
+  }
 .grid-container {
   display: flex;
   flex-wrap: wrap;
@@ -468,7 +467,7 @@ canvas {
 }
 
 .villager-item img {
-  height: 200px; 
+  height: 180px; 
   width: auto;
   max-width: 75%;
   object-fit: contain;

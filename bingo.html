@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +25,7 @@
             </a>
           </li>
           <li>
-            <li class="item active"> 
+            <li class="item"> 
               <a href="bingo.html" title="Bingo">
               <i class="fa-solid fa-gamepad"></i>
               Bingo
@@ -51,15 +52,16 @@
               <script>function scrollToSection(sectionId) {
                 const section = document.getElementById(sectionId);
                 if (section) {
-                  section.scrollIntoView({ behavior: 'smooth' });
+                  section.scrollIntoView({ behavior: 'smooth', block: "end", inline: "nearest"});
+               
+
                 }
               }
-
-
               </script>
                  
   
                 <div class="scroll-down-container" id="scroll-down-section" onclick="scrollToSection('villager-section')">
+
                   <p>Tap or scroll down to see Strawb's current villagers.</p>
                 </div>
             <canvas></canvas>
@@ -169,7 +171,7 @@
           &copy; 2023 Animal Crossing and any associated imagery are a registered trademark of Nintendo inc and Villager Bingo Hunt is in no way associated with Nintendo inc or any of its associated properties.
         </footer>
    
-    <script src="/js/SlotData.js"></script>
+    <script src="js/SlotData.js"></script>
     <script src="js/UI.js"></script>
     <script src="js/Villagers.js"></script>
     <script src="js/Card.js"></script>
