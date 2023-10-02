@@ -191,38 +191,7 @@ a#download {
 }
 
 
-.social-media-container {
-  position: relative;
-  right: 0;
-  left: 0%;
-  right: 0%;
-  max-width: 75%;
-  text-align: center;
-  height: auto;
-  width: 100%;  
-  margin: 5px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-   font-weight: bolder;
-  margin: 10px auto 5px; 
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 120px;
-}
-@media (max-width: 100px) {
-  .social-media-container {
-    flex-direction: column; 
-  }
-}
-.social-media-item {
-  margin-bottom: 10px;
-}
 
-.social-media-link {
-  color: blue;
-
-}
 
 .text-block {
   text-align: center;
@@ -420,17 +389,7 @@ canvas {
   
 }
 
-.villager-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  object-fit: contain;
-   max-width: auto;
-   width: auto;
-   gap: 10px;
-   margin: 5px auto auto;
-   border: 5px solid black;
-  
-  }
+
 .grid-container {
   display: flex;
   flex-wrap: wrap;
@@ -439,61 +398,7 @@ canvas {
 }
    
 
-@media (max-width: 768px) {
-  .villager-grid-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    object-fit: contain;
-    gap: 10px;
-  }
-}
 
-.villager-name {
-  font-family: quicksand;
-  font-weight: bolder;
-  display: block;
-  text-align: center;
-  margin-top: 3px;
-}
-
-.villager-grid-text {
-  position: relative;
-  top: 50%;
-  left: 15%;
-  font-size: 20px;
-  width: 65%;
-  max-height: 20%;
-  text-align: center;
-}
-
-.villager-item img {
-  height: 180px; 
-  width: auto;
-  max-width: 75%;
-  object-fit: contain;
-  margin-bottom: 1px;
-  margin-top: 70px;
-  justify-content: flex-end; 
-
-}
-
-
-
-
-.villager-grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-
-}
-
-@media (max-width: 768px) {
-  .villager-grid-item {
-    margin-bottom: 5px;
-   }
-}
 
 .bingo-grid {
   display: grid;
