@@ -41,16 +41,17 @@
               </script>
                  
   
-  
+                 <div class="wrapper">
+                  <p id="instructions" class="grow" onclick="card.randomizeCard(this)">
+                  Click here to randomize your bingo card.
+                  </p>
+                  <a id="download-btn" download="bingo-card.jpg" href="" onclick="card.downloadImage(this)">Download Bingo Card</a>   
+                </div>
             <canvas></canvas>
       
-            <div class="wrapper">
-              <p id="instructions" class="grow" onclick="card.randomizeCard(this)">
-              Click here to randomize your bingo card.
-              </p>
+  
                   
-            <a id="download-btn" download="bingo-card.jpg" href="" onclick="card.downloadImage(this)">Download Bingo Card</a>   
-          </div>
+       
 
           
         </ul>

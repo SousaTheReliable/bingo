@@ -70,6 +70,7 @@
   z-index: 9999;
   background-color: green;
   max-height: 25px;
+
 }
 
 .navbar a {
@@ -133,8 +134,6 @@ h2 {
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin: 5px;
-  margin-bottom: 20px;
 }
 
 #download-btn:hover {
@@ -186,7 +185,7 @@ a#download {
   background-color: transparent;
   font-family: 'Quicksand', sans-serif;
   max-width: auto;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -305,34 +304,18 @@ a#download {
   font-style: italic;
 }
 
-.rules img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
 
-.rules {
-  width: 75%;
-  height: auto;
-  padding-top: 10px;
-  padding: 25px;
-  max-width: 500px;
-  margin: 120px auto;
-  background-color: aliceblue;
-  border: 3px solid yellowgreen;
-  text-align: center;
-  font-size: 20px;
-}
 
 canvas {
   max-width: 100%;
   max-height: auto;
   width: auto;
-  margin-top: 10%;
+  margin-top: -3%;
 }
 
 #instructions {
   padding: 10px 100px;
+  margin-top: 50px;
   background-color: purple;
   color: white;
   border-radius: 6vh;
@@ -345,7 +328,6 @@ canvas {
   max-width: 100%;
   padding: 1%;
   transition: background-color 0.3s ease;
-  margin-top: -40px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
@@ -478,70 +460,4 @@ canvas {
 .error-page-text a:hover {
   background-color: #e0e0e0;
 }
-.spreadsheet-button {
-background-color: orange;
-  color: white;
-  border-radius: 6vh;
-  max-height: 51px;
-  text-decoration: none;
-  font-weight: bold;
-  font-family: Quicksand;
-  font-size: 20px;
-  cursor: pointer;
-  width: 50%;
-  max-width: 200px;
-  margin: 5px auto 5px;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  display: none;
-  
-}
 
-.spreadsheet-button:hover {
-  transform: scale(1.1);
-}
-
-.archive-block {
-  text-align: center;
-  height: auto;
-  width: 50%;
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 3%;
-  margin: 120px auto 5%;
-  padding: 20px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  background-color: #f7f7f7;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.archive-list {
-  text-align: left;
-  font-family: 'Quicksand', sans-serif;
-  margin: 40px auto;
-  font-size: 18px;
-  background: #fff;
-  width: 25%;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-
-}
-.links {
-  text-decoration: none;
-}
-
-.spreadsheet-template {
-justify-content: center;
-display: flex;
-
-
-}
